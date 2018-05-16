@@ -39,8 +39,7 @@ namespace CA2Client
                             {
                                 Console.WriteLine(room);
                             }
-                        }
-                        Console.ReadKey();
+                        }                       
                     }
                     else
                     {
@@ -52,6 +51,7 @@ namespace CA2Client
             {
                 Console.WriteLine(e.ToString());
             }
+            Console.ReadKey();
         }
     }
 }

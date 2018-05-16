@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace CA2Client
 {
     class MeetingRoom
-    {//test
-        //5465454
+    {
         public int RoomId { get; set; }
         public string Name { get; set; }
         public int Size { get; set; }
@@ -19,7 +18,5 @@ namespace CA2Client
         {
             return "Id: " + RoomId + "\tName: " + Name + "\n\tSize: " + Size + "\tLocation: " + Location + "\tEquipment: " + Equipment;
         }
-        //uuu
-        //http://localhost:49682/booking/GetAvailableRooms?_date=20180609000000&_startTime=20180609090001&_endTime=20180609100000
     }
 }
