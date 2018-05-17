@@ -19,7 +19,7 @@ namespace CA2Client
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("http://localhost:49682/booking/");
+                    client.BaseAddress = new Uri("http://imeet.azurewebsites.net/booking/");
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                     //test get free meetings rooms on 09/06/2018 from 09:00 to 10:00
@@ -39,8 +39,7 @@ namespace CA2Client
                             {
                                 Console.WriteLine(room);
                             }
-                        }
-                        Console.ReadKey();
+                        }                       
                     }
                     else
                     {
@@ -52,6 +51,7 @@ namespace CA2Client
             {
                 Console.WriteLine(e.ToString());
             }
+            Console.ReadKey();
         }
     }
 }
